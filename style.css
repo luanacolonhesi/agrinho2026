@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#FFF8E7;
+    color:#4E342E;
+}
+
+header{
+    background:#795548;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+.instructions, .score, .curiosidades{
+    padding:30px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+.card{
+    background:#F5F0E6;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    padding:25px;
+    width:250px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card h3{
+    color:#66BB6A;
+    margin-bottom:15px;
+}
+
+button{
+    background:#A5D6A7;
+    color:#4E342E;
+    border:none;
+    padding:12px 15px;
+    margin:8px 0;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#7CB342;
+    color:white;
+}
+
+.score #mensagem{
+    font-size:18px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+footer{
+    background:#795548;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+}
