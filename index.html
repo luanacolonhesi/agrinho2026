@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fazenda do Futuro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌿 Fazenda do Futuro</h1>
+    <p>Construa um agro forte e sustentável</p>
+</header>
+
+<section class="instructions">
+    <h2>Como Jogar</h2>
+    <p>Escolha práticas para sua fazenda. Cada escolha sustentável soma pontos e cada escolha prejudicial diminui.</p>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>🌾 Solo</h3>
+        <button onclick="escolha('solo','sustentavel')">Rotação de culturas (+10)</button>
+        <button onclick="escolha('solo','prejudicial')">Queimadas (-5)</button>
+    </div>
+
+    <div class="card">
+        <h3>💧 Água</h3>
+        <button onclick="escolha('agua','sustentavel')">Irrigação inteligente (+10)</button>
+        <button onclick="escolha('agua','prejudicial')">Desperdício (-5)</button>
+    </div>
+
+    <div class="card">
+        <h3>🌳 Vegetação</h3>
+        <button onclick="escolha('vegetacao','sustentavel')">Preservar matas (+10)</button>
+        <button onclick="escolha('vegetacao','prejudicial')">Desmatamento (-5)</button>
+    </div>
+
+</section>
+
+<section class="score">
+    <h2>🏆 Placar</h2>
+    <p>Pontos: <span id="pontos">0</span></p>
+    <p id="mensagem"></p>
+</section>
+
+<section class="curiosidades">
+    <h2>💡 Você sabia?</h2>
+    <p id="curiosidade">Clique no botão para ver uma curiosidade sobre sustentabilidade.</p>
+    <button onclick="novaCuriosidade()">Mostrar outra curiosidade</button>
+</section>
+
+<footer>
+    <p>Projeto Agrinho 2026 | Desenvolvido por [Luana Colonhesi]</p>
+</footer>
+
+<script src="qscript.js"></script>
+</body>
+</html>
